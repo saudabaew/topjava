@@ -18,6 +18,11 @@ public class User extends AbstractNamedEntity {
 
     private Set<Role> roles;
 
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
     private int caloriesPerDay = DEFAULT_CALORIES_PER_DAY;
 
     public User(Integer id, String name, String email, String password, Role role, Role... roles) {
